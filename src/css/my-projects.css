@@ -1,0 +1,7 @@
+.project-card {
+    display: none;
+}
+
+.project-card.visible {
+    display: flex;
+}
