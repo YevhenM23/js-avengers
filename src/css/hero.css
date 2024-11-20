@@ -1,42 +1,72 @@
-.hero {
-}
-.container {
-}
-.hero-content {
-}
 .hero-title {
+  padding-top: 96px;
   font-family: 'Impact', sans-serif;
   font-weight: 400;
-  font-size: 136px;
-  line-height: 1.14706;
-  letter-spacing: 0.01em;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
+  margin-bottom: 40px;
 }
 .hero-image {
+  display: none;
+  border-radius: 16px;
+  width: 108px;
+  height: 108px;
 }
 .hero-title-highlight {
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
-  font-size: 136px;
-  line-height: 1.14706;
-  letter-spacing: 0.01em;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #00b068;
 }
 
 .btn-hero {
+  display: flex;
+  align-items: center;
+
+  padding: 20px 5px;
+  margin-left: auto;
   border: none;
   background: #bcdfd1;
   border-radius: 16px;
-  width: 261px;
-  height: 96px;
+  width: 165px;
+  height: 92px;
+  margin-bottom: 40px;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+  background: #00b068;
+}
+
+.btn-img {
+  margin-right: 12px;
+}
+
+.btn-hero-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  transform: translateX(-80%);
+  transition: transform ease-out 0.7s;
+}
+
+.btn-hero:hover span {
+  transform: translateX(-40%);
 }
 
 .btn-hero-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
@@ -50,22 +80,21 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
+  margin-bottom: 72px;
 }
+
 .hero-highlight {
   color: #00b068;
 }
-.social-links {
-  background: #e4e5e6;
-  padding: 40px 0px;
-  width: 1280px;
-  height: 104px;
-}
+
 .social-list {
+  background: #e4e5e6;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 40px;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 0px;
 }
 .social-link {
   font-family: 'Poppins', sans-serif;
