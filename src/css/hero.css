@@ -1,6 +1,7 @@
 .hero {
-  background-image: url(../img/decor\ bg\ 1.jpg);
+  background: url('../img/bg-img/bg-mob-hero.png') no-repeat 50% 50% / contain;
 }
+
 .hero-title {
   padding-top: 96px;
   font-family: 'Impact', sans-serif;
@@ -71,7 +72,7 @@
   color: #292929;
 }
 
-.btn-container {
+.action-container {
   margin-bottom: 72px;
 }
 .hero-subtitle {
@@ -115,6 +116,11 @@
     max-width: 768px;
   }
 
+  .hero {
+    background: url('../img/bg-img/bg-tab-hero@2x.png') no-repeat 50% 50% /
+      contain;
+  }
+
   .hero-title {
     padding-top: 72px;
     font-size: 136px;
@@ -149,7 +155,7 @@
     font-size: 20px;
     line-height: 1.6;
   }
-  .btn-container {
+  .action-container {
     margin-bottom: 80px;
   }
 
@@ -165,6 +171,11 @@
     max-width: 1280px;
   }
 
+  .hero {
+    background: url('../img/bg-img/bg-desk-hero@2x.png') no-repeat 50% 50% /
+      contain;
+  }
+
   .hero-title {
     padding-top: 168px;
     font-size: 136px;
@@ -177,7 +188,7 @@
     display: inline-block;
   }
 
-  .btn-container {
+  .action-container {
     display: flex;
     align-items: flex-start;
     gap: 136px;
