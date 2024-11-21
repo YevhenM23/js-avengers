@@ -188,6 +188,10 @@
     display: inline-block;
   }
 
+  .btn-hero-title {
+    transform: translateX(-72%);
+  }
+
   .action-container {
     display: flex;
     align-items: flex-start;
