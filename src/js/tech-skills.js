@@ -3,15 +3,15 @@ const bars = document.querySelectorAll(
 );
 
 bars.forEach(bar => {
-  let scrollAmount = 0;
+  let scrollAmount = 1;
 
   function scrollSkills() {
-    scrollAmount -= 1;
+    scrollAmount += 1;
     bar.style.transform = `translateX(${scrollAmount}px)`;
-    if (Math.abs(scrollAmount) >= bar.scrollWidth / 2) {
-      scrollAmount = 0;
+
+    if (Math.abs(scrollAmount) >= bar.scrollWidth) {
+      scrollAmount = 2;
     }
-    requestAnimationFrame(scrollSkills);
   }
-  scrollSkills();
+  setInterval(scrollSkills, 25);
 });
