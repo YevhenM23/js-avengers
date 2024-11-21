@@ -13,5 +13,5 @@ bars.forEach(bar => {
       scrollAmount = 2;
     }
   }
-  setInterval(scrollSkills, 25);
+  setInterval(scrollSkills, 15);
 });
