@@ -9,6 +9,9 @@ const accordion = new Accordion(faqContainer, {
   duration: 400,
   onOpen: function (el) {
     el.style.overflow = 'visible';
+
+    //setting styles of the prev card back
+
     const allQuestions = document.querySelectorAll('.ac');
     allQuestions.forEach(question => {
       question.style.backgroundColor = 'white';
@@ -16,6 +19,7 @@ const accordion = new Accordion(faqContainer, {
       question.style.borderBottom = '1px solid #e4e5e6';
     });
 
+    //styles change when opening
     const question = el.closest('.ac');
     const prevQuestion = question.previousElementSibling;
     console.log(prevQuestion);
@@ -27,8 +31,13 @@ const accordion = new Accordion(faqContainer, {
     question.style.backgroundColor = '#BCDFD1';
     question.style.borderRadius = '16px';
     question.style.borderBottom = 'none';
+
+    //icon rotation
+    const icon = el.querySelector('.faq-icon use');
+    icon.setAttribute('href', '../img/sprite.svg#icon-vector-up-faq');
   },
   onClose: function (el) {
+    //styles back to normal
     const question = el.closest('.ac');
     const prevQuestion = question.previousElementSibling;
 
@@ -39,5 +48,9 @@ const accordion = new Accordion(faqContainer, {
     question.style.borderRadius = 'none';
     question.style.backgroundColor = 'white';
     question.style.borderBottom = '1px solid #e4e5e6';
+
+    //icon rotation
+    const icon = el.querySelector('.faq-icon use');
+    icon.setAttribute('href', '../img/sprite.svg#icon-vector-down-faq');
   },
 });
