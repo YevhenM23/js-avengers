@@ -1,0 +1,215 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 360px) {
+  .container {
+    max-width: 360px;
+    padding: 80px 20px 56px 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .about {
+    font-family: 'Impact', sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #292929;
+    margin-bottom: 40px;
+  }
+
+  .me {
+    color: #00b068;
+  }
+
+  .bio-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+
+  .bio-par {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #292929;
+    margin-bottom: 24px;
+  }
+
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ed-item {
+    position: relative;
+    padding-left: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #292929;
+  }
+
+  .ed-item::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    margin-top: calc((1.5em - 4px) / 2);
+    border-radius: 1px;
+    width: 4px;
+    height: 4px;
+    background-color: #00b068;
+  }
+
+  .bcg-tab,
+  .bcg-desc {
+    display: none;
+  }
+}
+
+/* *****************  Tablet  ********************* */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 124px 32px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  img {
+    border-radius: 16px;
+    width: 336px;
+    height: 392px;
+    object-fit: cover;
+    margin-top: 408px;
+  }
+
+  .about {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #292929;
+    margin: 0;
+  }
+
+  .content-wrapper {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .bio-container {
+    flex: 1;
+  }
+
+  .bio-title {
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-top: 60px;
+  }
+
+  .bio {
+    margin-top: 40px;
+  }
+
+  .bio-par {
+    margin-bottom: 24px;
+  }
+
+  .bcg-tab {
+    display: block;
+    position: absolute;
+    top: 65%;
+    right: 0;
+    z-index: -1;
+  }
+
+  .education-wrapper {
+    display: flex;
+    gap: 32px;
+  }
+
+  .education-block,
+  .role-block {
+    flex: 1;
+  }
+
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* ***************  Desctop   ******************** */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 164px 32px;
+  }
+
+  img {
+    border-radius: 16px;
+    width: 384px;
+    height: 448px;
+    padding-left: 208px;
+    margin-top: 312px;
+  }
+
+  .content-wrapper {
+    gap: 136px;
+  }
+
+  .education-wrapper {
+    padding-left: 208px;
+  }
+
+  .bcg-tab {
+    display: none;
+  }
+
+  .bcg-desc {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+  }
+}
