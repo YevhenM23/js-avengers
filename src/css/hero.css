@@ -1,9 +1,9 @@
 .hero {
-  background: url('../img/bg-img/bg-mob-hero.png') no-repeat 50% 50% / contain;
+  background: url('./img/bg-img/bg-mob-hero.png') no-repeat 50% 50% / contain;
 }
 
 .hero-title {
-  padding-top: 96px;
+  padding-top: 101px;
   font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 64px;
@@ -89,18 +89,20 @@
   color: #00b068;
 }
 
-.social-list {
+.container-social {
+  width: 100%;
   background: #e4e5e6;
+}
+
+.social-list {
   display: flex;
   align-items: center;
   text-align: center;
-  flex-wrap: nowrap;
   white-space: nowrap;
   justify-content: center;
   flex-direction: column;
   gap: 24px;
   padding: 32px 0px;
-  width: 100%;
 }
 .social-link {
   font-family: 'Poppins', sans-serif;
@@ -117,7 +119,7 @@
   }
 
   .hero {
-    background: url('../img/bg-img/bg-tab-hero@2x.png') no-repeat 50% 50% /
+    background: url('./img/bg-img/bg-tab-hero@2x.png') no-repeat 50% 50% /
       contain;
   }
 
@@ -172,7 +174,7 @@
   }
 
   .hero {
-    background: url('../img/bg-img/bg-desk-hero@2x.png') no-repeat 50% 50% /
+    background: url('./img/bg-img/bg-desk-hero@2x.png') no-repeat 50% 50% /
       contain;
   }
 

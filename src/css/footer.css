@@ -14,8 +14,8 @@
   min-width: 320px;
   margin: 0 auto;
   padding: 0 auto;
-  background-color: #e4e5e6;
-  border-top: 1px solid var(--light-light-grey);
+  /* background-color: #e4e5e6;
+  border-top: 1px solid var(--light-light-grey); */
 }
 .footer-logo {
   padding: 40px 0 24px;

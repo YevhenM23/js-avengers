@@ -108,13 +108,13 @@ body {
     position: relative;
   }
 
-  img {
+  /* img {
     border-radius: 16px;
     width: 336px;
     height: 392px;
     object-fit: cover;
     margin-top: 408px;
-  }
+  } */
 
   .about {
     font-size: 108px;
@@ -185,13 +185,13 @@ body {
     padding: 164px 32px;
   }
 
-  img {
+  /* img {
     border-radius: 16px;
     width: 384px;
     height: 448px;
     padding-left: 208px;
     margin-top: 312px;
-  }
+  } */
 
   .content-wrapper {
     gap: 136px;
