@@ -23,13 +23,10 @@
   justify-content: center;
   flex-direction: column;
   gap: 16px;
-  overflow: hidden;
 }
 .skills-bar {
   padding: 32px 0px;
-  max-width: 1392px;
   width: 100%;
-  height: 104px;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
@@ -40,15 +37,23 @@
   justify-content: flex-start;
   flex-direction: row;
   gap: 16px;
+  position: relative;
 }
 
 .top-bar {
   background: #bcdfd1;
+  z-index: 5;
 }
-.skills-text-top {
+
+.skills-text {
+  white-space: nowrap;
+}
+
+.top-bar .skills-text {
   color: #292929;
 }
-.skills-point-top {
+
+.top-bar .skills-point {
   display: flex;
   align-items: center;
   border-radius: 2px;
@@ -59,11 +64,12 @@
 .bottom-bar {
   background: #e4e5e6;
   transform: rotate(3deg);
+  z-index: 4;
 }
-.skills-text-bottom {
+.bottom-bar .skills-text {
   color: #00b068;
 }
-.skills-point-bottom {
+.bottom-bar .skills-point {
   display: flex;
   align-items: center;
   border-radius: 2px;
@@ -83,9 +89,7 @@
 
   .skills-bar {
     padding: 40px 0px;
-    max-width: 1517px;
     width: 100%;
-    height: 128px;
     font-size: 36px;
     line-height: 1.4;
     letter-spacing: 0.01em;
@@ -104,7 +108,6 @@
 
   .skills-bar {
     padding: 40px 0px;
-    max-width: 1517px;
     width: 100%;
   }
 }
