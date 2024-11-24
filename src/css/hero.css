@@ -1,10 +1,13 @@
-.hero-container {
+.section-hero {
   padding-top: 96px;
+}
+
+.hero-container {
   position: relative;
   margin-bottom: 72px;
   background-image: image-set(
-    url('./img/bg-img/bg-mob-hero.png') 1x,
-    url('./img/bg-img/bg-mob-hero@2x.png') 2x
+    url('../img/bg-img/bg-mob-hero.png') 1x,
+    url('../img/bg-img/bg-mob-hero@2x.png') 2x
   );
   background-repeat: no-repeat;
   background-position: center;
@@ -46,8 +49,15 @@
 }
 
 .wrapp-hero:hover .wrapp-arrow {
-  transform: translateX(40%);
+  transform: translateX(25%);
   transition: transform ease-out 0.7s;
+}
+
+@media only screen and (min-width: 360px) {
+  .wrapp-hero:hover .wrapp-arrow {
+    transform: translateX(40%);
+    transition: transform ease-out 0.7s;
+  }
 }
 
 .wrapp-arrow {
@@ -119,19 +129,27 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .section-hero {
+    padding-top: 88px;
+  }
+
   .hero-container {
     background-image: image-set(
-      url('./img/bg-img/bg-tab-hero.png') 1x,
-      url('./img/bg-img/bg-tab-hero@2x.png') 2x
+      url('../img/bg-img/bg-tab-hero.png') 1x,
+      url('../img/bg-img/bg-tab-hero@2x.png') 2x
     );
     background-position: center;
-    padding-top: 88px;
   }
 
   .background-wrapp {
     left: 155px;
     width: 261px;
     height: 96px;
+  }
+
+  .wrapp-hero:hover .wrapp-arrow {
+    transform: translateX(50%);
+    transition: transform ease-out 0.7s;
   }
 
   .title {
@@ -168,7 +186,16 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  .section-hero {
+    padding-top: 184px;
+  }
+
   .hero-container {
+    background-image: image-set(
+      url('../img/bg-img/bg-desk-hero.png') 1x,
+      url('../img/bg-img/bg-desk-hero@2x.png') 2x
+    );
+    background-position: center;
   }
 
   .hero-img {
@@ -183,13 +210,7 @@
   }
   .hero-container {
     padding: 0 32px;
-    padding-top: 184px;
     min-width: 1280px;
-    background-image: image-set(
-      url('./img/bg-img/bg-desk-hero.png') 1x,
-      url('./img/bg-img/bg-desk-hero@2x.png') 2x
-    );
-    background-position: center;
   }
 
   .wrapp-hero {
