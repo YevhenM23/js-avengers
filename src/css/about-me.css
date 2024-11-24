@@ -10,10 +10,10 @@ body {
 }
 
 @media (min-width: 360px) {
-  .container {
+  /* .container {
     max-width: 360px;
     padding: 80px 20px 56px 20px;
-  }
+  } */
 
   img {
     width: 100%;
@@ -101,12 +101,12 @@ body {
 /* *****************  Tablet  ********************* */
 
 @media (min-width: 768px) {
-  .container {
+  /* .container {
     max-width: 768px;
     padding: 124px 32px;
     margin: 0 auto;
     position: relative;
-  }
+  } */
 
   /* img {
     border-radius: 16px;
@@ -180,10 +180,10 @@ body {
 
 /* ***************  Desctop   ******************** */
 @media (min-width: 1280px) {
-  .container {
+  /* .container {
     max-width: 1280px;
     padding: 164px 32px;
-  }
+  } */
 
   /* img {
     border-radius: 16px;

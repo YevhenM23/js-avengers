@@ -16,6 +16,10 @@
   ></path>
 </symbol>
 
+<symbol id="icon-burger" viewBox="0 0 44 32">
+<path d="M0.668 30.054v-2.667h42.667v2.667h-42.667zM0.668 17.334v-2.667h42.667v2.667h-42.667zM0.668 4.614v-2.667h42.667v2.667h-42.667z"></path>
+</symbol>
+
 
 <symbol id="icon-vector-up" viewBox="0 0 50 32">
   <path 
