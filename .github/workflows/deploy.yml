@@ -1,23 +1,29 @@
+
 name: Build and deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # Крок 1: Checkout репозиторію
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
 
+      # Крок 2: Встановлення залежностей та збірка
       - name: Install and build 🔧
         run: |
           npm install
           npm run build
 
+      # Крок 3: Деплой до GitHub Pages
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
+          token: ${{ secrets.GITHUB_TOKEN }}
