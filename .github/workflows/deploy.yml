@@ -18,6 +18,7 @@ jobs:
       - name: Install and build 🔧
         run: |
           npm install
+          npm update
           npm run build
 
       # Крок 3: Деплой до GitHub Pages
