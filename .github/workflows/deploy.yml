@@ -21,3 +21,10 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+- name: Clear Cache
+  run: |
+    git reset --hard
+    git clean -fdx
